@@ -8,14 +8,14 @@ int Parameterinput(string text)
     return parameter;
 }
 
-void IntersectionPoints(int b1, int k1, int b2, int k2)
+void IntersectionPoints(double b1, double k1, double b2, double k2)
 {
     if (k1 == k2) Console.WriteLine("Прямые параллельны.");
     else
     {
 
-        double pointX = (b2 - b1) / (k1 - k2);
-        double pointY = k1 * pointX + b1;
+        double pointX = (b1 - b2) / (k2 - k1);
+        double pointY = k2 * pointX + b2;
         Console.WriteLine($"Координата точки пересечения прямых: ({pointX}; {pointY})");
     }
 }
