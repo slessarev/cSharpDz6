@@ -14,8 +14,8 @@ void IntersectionPoints(double b1, double k1, double b2, double k2)
     else
     {
 
-        double pointX = (b1 - b2) / (k2 - k1);
-        double pointY = k2 * pointX + b2;
+        double pointX = (b2 - b1) / (k1 - k2);
+        double pointY = k1 * pointX + b1;
         Console.WriteLine($"Координата точки пересечения прямых: ({pointX}; {pointY})");
     }
 }
