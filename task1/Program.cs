@@ -20,7 +20,7 @@ int PositiveCheck(int[] array)
     int positiveCounter = 0;
     for (int i = 0; i < array.Length; i++)
         if (array[i] > 0) positiveCounter++;
-        return positiveCounter;
+    return positiveCounter;
 }
 
 Console.Clear();
